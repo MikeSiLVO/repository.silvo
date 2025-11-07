@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Kodi
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Don't ignore generated files (we want these in git)
+!addons.xml
+!addons.xml.md5
