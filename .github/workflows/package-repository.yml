@@ -1,0 +1,61 @@
+name: Package Repository Addon
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'repository.silvo/**'
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check if version changed
+        id: version_check
+        run: |
+          if git diff HEAD~1 HEAD -- repository.silvo/addon.xml | grep -E '^\+.*version=' | grep -E -v '^\+\+\+'; then
+            echo "Version changed in repository.silvo/addon.xml"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "Version unchanged - skipping packaging"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.version_check.outputs.changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Package repository addon
+        if: steps.version_check.outputs.changed == 'true'
+        run: |
+          python _package_addon.py repository.silvo/
+          echo "✓ Repository addon packaged"
+
+      - name: Commit and push changes
+        if: steps.version_check.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add repository.silvo-1.0.0.zip
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            VERSION=$(python3 -c "import xml.etree.ElementTree as ET; print(ET.parse('repository.silvo/addon.xml').getroot().get('version'))")
+            git commit -m "Update repository.silvo-${VERSION}.zip"
+            git push
+            echo "✓ Pushed repository addon package"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

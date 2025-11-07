@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiLVO Development Repository - Installation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .install-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .install-box h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .install-box ol {
+            margin-left: 20px;
+        }
+        .install-box li {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+        code {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: "Monaco", "Courier New", monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 10px 0;
+        }
+        .download-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+        }
+        .channel-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .channel-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .channel-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .channel-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .channel-card .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SiLVO Development Repository</h1>
+            <p>Pre-release testing for Aeon Nox: SiLVO and related addons</p>
+        </div>
+
+        <div class="content">
+            <div class="install-box">
+                <h2>📦 Quick Install (Recommended)</h2>
+                <ol>
+                    <li>Download the repository addon:
+                        <br><a href="repository.silvo/repository.silvo-1.0.0.zip" class="download-btn">⬇ Download repository.silvo-1.0.0.zip</a>
+                    </li>
+                    <li>In Kodi, go to: <strong>Settings → Add-ons → Install from zip file</strong></li>
+                    <li>Enable <strong>"Unknown sources"</strong> if prompted</li>
+                    <li>Navigate to the downloaded zip file and install it</li>
+                    <li>The repository will auto-update from GitHub Pages</li>
+                </ol>
+            </div>
+
+            <div class="install-box">
+                <h2>🌐 Install from File Manager (Alternative)</h2>
+                <ol>
+                    <li>In Kodi, go to: <strong>Settings → File Manager → Add source</strong></li>
+                    <li>Enter this URL: <code>https://mikesilvo.github.io/repository.silvo/</code></li>
+                    <li>Name it: <code>SiLVO Repo</code></li>
+                    <li>Go to: <strong>Settings → Add-ons → Install from zip file</strong></li>
+                    <li>Select <strong>SiLVO Repo</strong> and install <code>repository.silvo-1.0.0.zip</code></li>
+                </ol>
+            </div>
+
+            <div class="warning">
+                <strong>⚠️ Important:</strong> This repository contains pre-release software for testing purposes.
+                Stable versions are available in the official Kodi repository. Only use this if you want to help test new features.
+            </div>
+
+            <h2 style="color: #667eea; margin: 40px 0 20px;">📢 Available Channels</h2>
+
+            <div class="channel-info">
+                <div class="channel-card">
+                    <span class="badge">Pre-Release</span>
+                    <h3>Beta Testing</h3>
+                    <p>Beta versions with normal addon IDs. These will automatically upgrade to stable versions when released to the official Kodi repository.</p>
+                    <br>
+                    <strong>Use for:</strong> Testing upcoming releases
+                    <br>
+                    <strong>Addons:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>script.skin.info.service</li>
+                        <li>skin.aeon.nox.silvo</li>
+                    </ul>
+                </div>
+
+                <div class="channel-card">
+                    <span class="badge">Testing</span>
+                    <h3>Experimental</h3>
+                    <p>Experimental versions with modified addon IDs (.test suffix). These can be installed side-by-side with production versions for comparison.</p>
+                    <br>
+                    <strong>Use for:</strong> Major feature testing
+                    <br>
+                    <strong>Addons:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>script.skin.info.service.test</li>
+                        <li>skin.aeon.nox.silvo.test</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 style="color: #667eea; margin: 40px 0 20px;">🔧 Requirements</h2>
+            <ul style="margin-left: 30px;">
+                <li>Kodi Omega (21.x) or newer</li>
+                <li>"Unknown sources" enabled for initial installation</li>
+                <li>Internet connection for updates</li>
+            </ul>
+
+            <h2 style="color: #667eea; margin: 40px 0 20px;">💬 Support & Feedback</h2>
+            <p>Found a bug or have feedback? Please report issues on the relevant addon's GitHub repository or Kodi forum thread.</p>
+        </div>
+
+        <div class="footer">
+            <p>SiLVO Development Repository | Hosted on GitHub Pages</p>
+            <p style="margin-top: 5px;">Stable releases available in official Kodi repository</p>
+        </div>
+    </div>
+</body>
+</html>

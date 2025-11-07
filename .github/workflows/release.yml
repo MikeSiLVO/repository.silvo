@@ -1,0 +1,69 @@
+name: Generate Repository Files
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'pre-release/**'
+      - 'testing/**'
+      - '_repo_generator.py'
+  workflow_dispatch:
+
+jobs:
+  generate-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate addons.xml files
+        run: |
+          python _repo_generator.py
+          echo "Repository files generated successfully"
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+          echo "=== Files in pre-release/ ==="
+          ls -la pre-release/ 2>/dev/null || echo "Directory not found"
+
+          echo "=== Files in testing/ ==="
+          ls -la testing/ 2>/dev/null || echo "Directory not found"
+
+          echo "=== Files matching pattern ==="
+          ls pre-release/addons.xml* testing/addons.xml* 2>/dev/null || echo "No files match pattern"
+
+          echo "=== Git status before add ==="
+          git status
+
+          git add pre-release/addons.xml* 2>/dev/null || true
+          git add testing/addons.xml* 2>/dev/null || true
+
+          echo "=== Staged files ==="
+          git diff --staged --name-only
+
+          echo "=== Git status after add ==="
+          git status
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate repository files [skip ci]"
+            git push
+            echo "✓ Committed and pushed repository files"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
