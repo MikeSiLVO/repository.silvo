@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.silvo" name="SiLVO Development Repository" version="1.0.0" provider-name="SiLVO">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
     <extension point="xbmc.addon.repository" name="SiLVO Dev Repo">
-        <!-- Pre-Release Channel: Beta versions with normal addon IDs -->
-        <!-- These will upgrade to stable versions from official Kodi repo -->
-        <dir minversion="21.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/</datadir>
-            <hashes>true</hashes>
+        <dir minversion="21.0.0" maxversion="21.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/omega/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/omega/</datadir>
         </dir>
-
-        <!-- Testing Channel: Experimental versions with modified IDs (.test suffix) -->
-        <!-- These install side-by-side with production versions -->
-        <dir minversion="21.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/</datadir>
-            <hashes>true</hashes>
+        <dir minversion="21.9.1">
+            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/piers/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/piers/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/piers/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

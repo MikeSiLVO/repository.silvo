@@ -25,7 +25,7 @@ class RepoGenerator:
             channels = self._find_channels()
 
         if not channels:
-            print("No channels found. Expected directories: pre-release, testing")
+            print("No channels found. Expected directories: omega, piers")
             sys.exit(1)
 
         print(f"Processing {len(channels)} channel(s): {', '.join(channels)}")
@@ -36,7 +36,7 @@ class RepoGenerator:
         """Find all channel directories in current path"""
         channels = []
         for item in Path('.').iterdir():
-            if item.is_dir() and item.name in ['pre-release', 'testing', 'stable', 'alpha', 'beta']:
+            if item.is_dir() and item.name in ['omega', 'piers', 'stable', 'alpha', 'beta']:
                 channels.append(item.name)
         return sorted(channels)
 
