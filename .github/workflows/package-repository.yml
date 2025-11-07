@@ -16,18 +16,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check if version changed
+        id: version_check
+        run: |
+          if git diff HEAD~1 HEAD -- repository.silvo/addon.xml | grep -E '^\+.*version=' | grep -E -v '^\+\+\+'; then
+            echo "Version changed in repository.silvo/addon.xml"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "Version unchanged - skipping packaging"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Set up Python
+        if: steps.version_check.outputs.changed == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Package repository addon
+        if: steps.version_check.outputs.changed == 'true'
         run: |
           python _package_addon.py repository.silvo/
           echo "✓ Repository addon packaged"
 
       - name: Commit and push changes
+        if: steps.version_check.outputs.changed == 'true'
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
