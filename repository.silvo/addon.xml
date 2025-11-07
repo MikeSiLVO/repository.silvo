@@ -7,18 +7,18 @@
         <!-- Pre-Release Channel: Beta versions with normal addon IDs -->
         <!-- These will upgrade to stable versions from official Kodi repo -->
         <dir minversion="21.0.0">
-            <info compressed="false">https://mikesilvo.github.io/repository.silvo/pre-release/addons.xml</info>
-            <checksum>https://mikesilvo.github.io/repository.silvo/pre-release/addons.xml.md5</checksum>
-            <datadir zip="true">https://mikesilvo.github.io/repository.silvo/pre-release/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/pre-release/</datadir>
             <hashes>true</hashes>
         </dir>
 
         <!-- Testing Channel: Experimental versions with modified IDs (.test suffix) -->
         <!-- These install side-by-side with production versions -->
         <dir minversion="21.0.0">
-            <info compressed="false">https://mikesilvo.github.io/repository.silvo/testing/addons.xml</info>
-            <checksum>https://mikesilvo.github.io/repository.silvo/testing/addons.xml.md5</checksum>
-            <datadir zip="true">https://mikesilvo.github.io/repository.silvo/testing/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/MikeSiLVO/repository.silvo/main/testing/</datadir>
             <hashes>true</hashes>
         </dir>
     </extension>
