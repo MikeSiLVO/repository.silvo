@@ -8,6 +8,13 @@ This repository provides early access to upcoming releases for testing and feedb
 
 ## 📦 Installation
 
+### Prerequisites
+
+Before installing, enable these settings in Kodi:
+
+1. **Settings → System → Add-ons → Unknown sources** → Enable
+2. **Settings → System → Add-ons → Update official add-ons from** → Any repositories
+
 ### Method 1: Direct Zip Install (Recommended)
 
 1. Download: [repository.silvo-1.0.0.zip](https://mikesilvo.github.io/repository.silvo/repository.silvo/repository.silvo-1.0.0.zip)
