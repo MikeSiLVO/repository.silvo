@@ -109,13 +109,6 @@ def package_addon(addon_source, output_dir, channel=None):
     file_count = 0
     try:
         with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-            # Create explicit directory entry for Kodi compatibility
-            # Kodi expects exactly 1 folder entry at the root of the zip
-            dir_info = zipfile.ZipInfo(f"{addon_id}/")
-            dir_info.external_attr = 0o40775 << 16  # Directory permissions
-            zipf.writestr(dir_info, '')
-            print(f"  Added: {addon_id}/ (directory)")
-
             for root, dirs, files in os.walk(addon_source):
                 # Filter out excluded directories
                 dirs[:] = [d for d in dirs if not should_exclude(Path(root) / d)]
