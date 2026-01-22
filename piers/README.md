@@ -1,1 +1,3 @@
-# Piers Channel\n\nBeta releases for Kodi Piers (v22+)
+# Piers Channel
+
+Beta releases for Kodi Piers (v22+)
