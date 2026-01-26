@@ -34,14 +34,18 @@
 		</assets>
 		<news>
 2.0.0~beta8
-- Rewrote path utilities to be VFS-aware (fixes Windows/SMB/network paths)
-- Fixed BDMV/VIDEO_TS artwork path detection
-- Fixed movie folder mode artwork paths
-- Added validation for empty paths in artwork downloader
-- Added logging for failed path builds
-- Fixed metadata editor not allowing fields to be cleared
-- Fixed year edit corrupting premiered date if malformed
-- Fixed ratings sync skipping database update for unchanged items
+- Added Download Artwork context menu action for single items
+- TV show download now includes all seasons and episodes
+- Fixed season artwork path building
+- Fixed bulk download not including episodes in tvshows scope
+- Fixed inherited artwork prefixes (tvshow.*, season.*) being downloaded
+- Fixed online service cache causing property flicker
+- Fixed slideshow timing bug (sqlite3.Row compatibility)
+- Fixed blur retry logging and stinger exception logging
+- Fixed Python 3.8 compatibility issues
+- Fixed editor save when value unchanged
+- Fixed artwork auto download property fetching
+- Various service and artwork scanner cleanups
 
 2.0.0~beta7
 - Fixed metadata editor for TV shows (removed invalid 'status' field)
