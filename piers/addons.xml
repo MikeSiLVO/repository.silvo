@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.0~beta8"
+	   version="2.0.0~beta9"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -34,6 +34,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+2.0.0~beta9
+- Fixed episode artwork download failing due to duplicate JSON-RPC property
+
 2.0.0~beta8
 - Added Download Artwork context menu action for single items
 - TV show download now includes all seasons and episodes
