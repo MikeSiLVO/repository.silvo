@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.0~beta7"
+	   version="2.0.0~beta8"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -34,6 +34,16 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+2.0.0~beta8
+- Rewrote path utilities to be VFS-aware (fixes Windows/SMB/network paths)
+- Fixed BDMV/VIDEO_TS artwork path detection
+- Fixed movie folder mode artwork paths
+- Added validation for empty paths in artwork downloader
+- Added logging for failed path builds
+- Fixed metadata editor not allowing fields to be cleared
+- Fixed year edit corrupting premiered date if malformed
+- Fixed ratings sync skipping database update for unchanged items
+
 2.0.0~beta7
 - Fixed metadata editor for TV shows (removed invalid 'status' field)
 - Fixed artwork downloader downloading tvshow/season art for each episode
