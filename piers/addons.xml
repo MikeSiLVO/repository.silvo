@@ -192,13 +192,17 @@
 		</news>
 	</extension>
 </addon>
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.0~beta24" provider-name="MikeSiLVO">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.0~beta25" provider-name="MikeSiLVO">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py"/>
     <extension point="xbmc.addon.metadata">
         <news>
+3.0.0~beta25
+  - Add source selection step to playlist picker
+  - Fix infinite loop with single playlist source, sort playlists by name
+
 3.0.0~beta24
   - Remove showGetMore
 
