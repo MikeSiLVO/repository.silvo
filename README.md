@@ -1,16 +1,12 @@
 # SiLVO Development Repository
 
-Development and pre-release repository for **Aeon Nox: SiLVO** skin and related addons.
+Pre-release repository for SiLVO addons and skins for Kodi Piers (v22+).
 
-## 🎯 Purpose
-
-This repository provides early access to upcoming releases for testing and feedback **before** they're submitted to the official Kodi repository.
-
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
-Before installing, enable these settings in Kodi:
+Enable these settings in Kodi:
 
 1. **Settings → System → Add-ons → Unknown sources** → Enable
 2. **Settings → System → Add-ons → Update official add-ons from** → Any repositories
@@ -30,16 +26,12 @@ Before installing, enable these settings in Kodi:
 4. **Settings → Add-ons → Install from zip file → SiLVO Repo**
 5. Install `repository.silvo-1.0.0.zip`
 
-## ⚠️ Important Notes
+## Important
 
-- This is a **testing repository** - stable releases go to official Kodi repo
+- This is a **pre-release testing** repository — stable releases go to the official Kodi repo
 - Pre-release software may contain bugs
-- Always backup your Kodi setup before testing pre-release versions
+- Back up your Kodi setup before testing
 
-## 📝 License
+## License
 
-Each addon maintains its own license. Repository structure is MIT licensed.
-
----
-
-**Repository maintained by:** MikeSiLVO
+Each addon maintains its own license.
