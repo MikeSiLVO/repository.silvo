@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.0~beta19"
+	   version="2.0.0~beta20"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1" />
@@ -34,6 +34,13 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+2.0.0~beta20
+- Continuous TV show updater replaces one-shot warmup
+- Smart TTL tiers for TV shows based on episode schedule and completeness
+- Stale next-episode detection invalidates outdated cache entries
+- Texture cache reports failed artwork URLs for stale library entries
+- JSON-RPC invalid params errors downgraded to debug logging
+
 2.0.0~beta19
 - Kodi version detection for adaptive JSON-RPC queries
 - Blur skips Kodi virtual icons (DefaultShortcut.png, etc.)
