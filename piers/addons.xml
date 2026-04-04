@@ -216,13 +216,18 @@
 		</news>
 	</extension>
 </addon>
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.0~beta26" provider-name="MikeSiLVO">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.0~beta27" provider-name="MikeSiLVO">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py"/>
     <extension point="xbmc.addon.metadata">
         <news>
+3.0.0~beta27
+  - BREAKING: Property(path) now returns bare path (e.g. plugin://...) instead of full action
+  - New Property(action) for full action string (e.g. ActivateWindow(videos,plugin://...,return))
+  - Skins using Property(path) in onclick/templates must switch to Property(action)
+
 3.0.0~beta26
   - Support type="widgets" on top-level menus for standalone widget management
 
