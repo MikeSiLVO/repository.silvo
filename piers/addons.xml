@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.0~beta33"
+	   version="2.0.0~beta34"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1" />
@@ -35,6 +35,10 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+2.0.0~beta34
+- Fix music playlist backgrounds showing blank
+- Add NFO writer for the metadata editor
+
 2.0.0~beta33
 - Fix: Download Artwork failed on movie sets
 - Fix: Pre-Cache + Download only processed episodes, skipping movies, sets, music and other types
