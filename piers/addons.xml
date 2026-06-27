@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.0~beta35"
+	   version="2.0.0~beta36"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1" />
@@ -32,6 +32,12 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+2.0.0~beta36
+- Service now exits cleanly on Kodi shutdown, even while fetching online data
+- Skins can enable the library and online services separately; library-only skins make no internet calls
+- Lighter online fetching when scrolling through music videos
+- Translation updates
+
 2.0.0~beta35
 - Metadata editor: NFO export now writes the movie set overview
 - Movie sets: year list is now de-duplicated and sorted, with a new Years.Range property for skins
@@ -40,17 +46,6 @@
 2.0.0~beta34
 - Fix music playlist backgrounds showing blank
 - Add NFO writer for the metadata editor
-
-2.0.0~beta33
-- Fix: Download Artwork failed on movie sets
-- Fix: Pre-Cache + Download only processed episodes, skipping movies, sets, music and other types
-- Fix: missing-artwork scan skipped artists
-- Fix: texture cleanup could wrongly remove cached art for music, sets and other item types
-- Texture cleanup shows per-type scan progress and can be cancelled during the scan
-- Fanart slideshow keeps up with artwork changes and shows a more balanced mix of movies, TV shows and music
-
-2.0.0~beta32
-- Fix: MDBList and OMDb API keys could fail to save, making the connection test fail after reopening settings
 
 2.0.0-Betas
 - Complete rewrite of the service
@@ -64,13 +59,17 @@
 - Plugin widgets: Next Up, Discovery, Recommendations, Cast, Crew, Similar and more
 - Info dialogs: Actor Info, Video Info and Image Viewer
 - Stinger (mid/post-credits) notifications with skin override support
-- Tools: image blur, color picker, fanart slideshow and animated-poster (GIF) scanner
+- Tools: image blur, color picker, fanart slideshow, texture cache cleanup and animated-poster (GIF) scanner
 - Skinner helpers: generic JSON-RPC wrapper (action=json) and skin setting actions (set/toggle/reset)
 - Requires Kodi 21 (Omega) or newer
 - Skins enable the service with Skin.SetBool(SkinInfo.Service)
 		</news>
 		<summary lang="en_GB">Provides rich media info and artwork to skins.</summary>
+		<summary lang="fr_FR">Fournit aux habillages des informations enrichies sur les médias ainsi que leurs visuels.</summary>
+		<summary lang="pl_PL">Dostarcza bogate informacje o mediach i grafikę dla skórek.</summary>
 		<description lang="en_GB">Skin Info Service provides skins with rich metadata and artwork beyond what Kodi exposes by default. It adds extra properties such as ratings from multiple sources, artwork, stream details, and cast and plot information for movies, TV shows, episodes, sets, music videos, artists, and albums, drawing on both your library and online data. It also includes a tool to find and add animated GIF posters to your library.</description>
+		<description lang="fr_FR">Skin Info Service fournit des informations supplémentaires telles que les notes, les illustrations et les détails de flux pour les films, les séries, les sagas, les artistes et les albums. Comprend un outil de recherche d&apos;affiches GIF pour trouver et ajouter automatiquement des affiches GIF animées à votre médiathèque.</description>
+		<description lang="pl_PL">Skin Info Service dostarcza skórkom bogate metadane i grafikę, wykraczając daleko poza to, co Kodi udostępnia domyślnie. Dodaje dodatkowe właściwości, takie jak oceny z wielu źródeł, grafikę, szczegóły transmisji oraz informacje o obsadzie i fabule filmów, seriali, odcinków, kolekcji filmowych, teledysków, wykonawców i albumów, korzystając zarówno z Twojej biblioteki, jak i danych online. Zawiera również narzędzie do wyszukiwania i dodawania animowanych plakatów GIF do Twojej biblioteki.</description>
 	</extension>
 </addon>
 <addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.2~beta1" provider-name="MikeSiLVO">
