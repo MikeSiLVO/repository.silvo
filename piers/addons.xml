@@ -136,10 +136,10 @@
     </extension>
 </addon>
 
-<addon id="skin.aeon.nox.silvo" version="11.0.0~beta3" name="Aeon Nox: SiLVO" provider-name="SiLVO">
+<addon id="skin.aeon.nox.silvo" version="11.0.0~beta4" name="Aeon Nox: SiLVO" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0" />
-		<import addon="script.skinshortcuts" version="3.0.1" />
+		<import addon="script.skinshortcuts" version="3.0.2~beta5" />
 		<import addon="script.skin.info.service" version="2.0.0~beta38" />
 		<import addon="resource.images.studios.white" version="0.0.1" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
@@ -172,6 +172,11 @@
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
 		<news>
+11.0.0~beta4
+- Restore widget renaming when selecting a widget
+- Fix TV media flags showing in unintended views
+- Translation updates
+
 11.0.0~beta3
 - Fix duplicate labels across home widgets
 - Add DTS-ES, DTS 96/24, and DTS Express audio flags
@@ -217,7 +222,7 @@
 		<summary lang="he_IL">המעטפת נוצרה על ידי BigNoid, Modded by SiLVO, and והיישומונים על ידי Mr. VLO</summary>
 		<summary lang="hu_HU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="is_IS">Útbúið af BigNoid, breytt af SiLVO, viðmótshlutar eftir Mr. V</summary>
-		<summary lang="it_IT">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="it_IT">Creato da BigNoid, modificato da SiLVO e con i widget di Mr. V</summary>
 		<summary lang="ko_KR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="lt_LT">Sukūrė BigNoid, modifikavo SiLVO bei valdiklius pridėjo Mr. V</summary>
 		<summary lang="ms_MY">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
@@ -254,7 +259,7 @@
 		<description lang="hr_HR">Potpuno preoblikovan moderan izgled, uz zadržani klasični Aeon osjećaj.</description>
 		<description lang="hu_HU">Teljesen áttervezett modern kinézet, de megtartva a klasszikus Aeon érzetet.</description>
 		<description lang="is_IS">Endurhannað nútímalegt útlit í anda Aeon.</description>
-		<description lang="it_IT">Completamente ridisegnato per creare un look moderno, mantenendo la consueta qualità Aeon.</description>
+		<description lang="it_IT">Completamente riprogettato per creare un look moderno, pur mantenendo lo stile classico di Aeon.</description>
 		<description lang="ko_KR">고전적인 Aeon 느낌을 유지하면서 현대적인 모습으로 완전히 다시 디자인하여 만들었습니다.</description>
 		<description lang="lt_LT">Pilnai atnaujinta, kad sukurtų modernią išvaizdą, išlaikant klasikinio Aeon pojūtį.</description>
 		<description lang="ms_MY">Direka semula sepenuhnya untuk hasilkan penampilan modern, tetapi masih mengekalkan penampilan Aeon klasik.</description>
