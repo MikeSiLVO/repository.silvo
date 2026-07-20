@@ -60,13 +60,18 @@
 		<description lang="pl_PL">Skin Info Service dostarcza skórkom bogate metadane i grafikę, wykraczając daleko poza to, co Kodi udostępnia domyślnie. Dodaje dodatkowe właściwości, takie jak oceny z wielu źródeł, grafikę, szczegóły transmisji oraz informacje o obsadzie i fabule filmów, seriali, odcinków, kolekcji filmowych, teledysków, wykonawców i albumów, korzystając zarówno z Twojej biblioteki, jak i danych online. Zawiera również narzędzie do wyszukiwania i dodawania animowanych plakatów GIF do Twojej biblioteki.</description>
 	</extension>
 </addon>
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.2~beta5" provider-name="MikeSiLVO">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.2~beta6" provider-name="MikeSiLVO">
     <requires>
         <import addon="xbmc.python" version="3.0.2"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py"/>
     <extension point="xbmc.addon.metadata">
         <news>
+3.0.2~beta6
+  - Fix: background picker folder rows stamp a name, type, count and path
+  - Fix: browse source rows stamp a name and path
+  - Fix: a property set with a built-in name replaces the built-in instead of adding a second entry
+
 3.0.2~beta5
   - Add: a rename attribute on a widget picker button prompts for a custom widget label
   - Add: picker folder rows stamp a name, type, count and path
