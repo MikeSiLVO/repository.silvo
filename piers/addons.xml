@@ -65,13 +65,16 @@
 		<description lang="zh_CN">皮肤信息服务为皮肤提供超出 Kodi 默认范围的丰富元数据和艺术图。它添加了多种额外属性,例如来自多个来源的评分、艺术图、流媒体详情,以及电影、电视剧、剧集、合集、音乐视频、艺术家和专辑的演员阵容和剧情信息,数据来源包括您的媒体库和在线数据。它还包含一个工具,用于查找并向您的媒体库添加动画 GIF 海报。</description>
 	</extension>
 </addon>
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.4~beta2" provider-name="MikeSiLVO">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="3.0.4~beta3" provider-name="MikeSiLVO">
     <requires>
         <import addon="xbmc.python" version="3.0.2"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py"/>
     <extension point="xbmc.addon.metadata">
         <news>
+3.0.4~beta3
+  - Fix: a variable a template declares stays defined when no menu item matches it
+
 3.0.4~beta2
   - Add: a warning when a menu, item, widget, background or view name is defined more than once
 
