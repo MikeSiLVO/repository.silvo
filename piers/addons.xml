@@ -148,7 +148,7 @@
     </extension>
 </addon>
 
-<addon id="skin.aeon.nox.silvo" version="11.0.0~beta5" name="Aeon Nox: SiLVO" provider-name="SiLVO">
+<addon id="skin.aeon.nox.silvo" version="11.0.0~beta6" name="Aeon Nox: SiLVO" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0" />
 		<import addon="script.skinshortcuts" version="3.0.2" />
@@ -184,6 +184,13 @@
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
 		<news>
+11.0.0~beta6
+- Add saved searches to the PVR breadcrumb
+- Load only the similar titles the info dialog shows
+- Fix mouse support for the Skin Shortcuts action buttons
+- Fix the PVR search details panel fading out late
+- Translation updates
+
 11.0.0~beta5
 - Rework the PVR search window, group manager, and guide search (wip)
 - Standardize PVR channel, recording, timer, and info panels plus the event log (wip)
