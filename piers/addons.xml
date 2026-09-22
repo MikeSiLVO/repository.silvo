@@ -131,7 +131,7 @@
 
 <addon id="service.watchkeeper"
 	   name="Watchkeeper"
-	   version="0.2.0~beta1"
+	   version="0.2.0~beta2"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1" />
@@ -158,6 +158,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+0.2.0~beta2
+- Never lowers a play count the library already holds, so a Trakt sync or any other tool that raises a count is no longer overwritten
+
 0.2.0~beta1
 - Saves play counts, last played times, resume points and user ratings as you watch
 - Puts them back after a library rebuild, matched on unique id so a rename or a move survives
