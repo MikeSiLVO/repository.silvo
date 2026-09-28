@@ -2,7 +2,7 @@
 <addons>
 <addon id="script.skin.info.service"
 	   name="Skin Info Service"
-	   version="2.0.1~beta6"
+	   version="2.0.1~beta7"
 	   provider-name="MikeSiLVO">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1" />
@@ -33,12 +33,25 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-2.0.1~beta6
-- Set Container.PluginCategory for page headers and breadcrumbs
-- By Actor takes a position param to pin a widget to a billing slot
+2.0.1~beta7
+- Watch time for TV shows and seasons, from the service and the plugin
+- Plugin TV show and season items now carry runtime and watch time
+- Season watched episode count now fills in
+- Online show info and ratings for episodes
+- Default ratings source setting now takes effect
+- Clear logos follow the online metadata language
+- Music video artist and album node lookups work without a dbid
+- Play all and play random find items again
+- Skin property values keep their commas
+- Texture cleanup menu tidied, age cleanup report added to last report
+- Animated posters found on network shares
+- Editor saves song moods and lists every library value
+- Ratings: Stop All Updates stops at once, RogerEbert thumbs-down and Emmy wins added
+- Many more dialogs and prompts translated, en_us uses US spelling
 		</news>
 		<summary lang="cs_CZ">Poskytuje vzhledům podrobné informace o médiích a grafiku.</summary>
 		<summary lang="en_GB">Provides rich media info and artwork to skins.</summary>
+		<summary lang="en_US">Provides rich media info and artwork to skins.</summary>
 		<summary lang="es_ES">Provee información enriquecida del contenido y arte a las skins.</summary>
 		<summary lang="fr_FR">Fournit aux habillages des informations enrichies sur les médias ainsi que leurs visuels.</summary>
 		<summary lang="hu_HU">Médiainformációkat és grafikákat biztosít a felszínekhez.</summary>
@@ -48,6 +61,8 @@
 		<summary lang="zh_CN">为皮肤提供丰富的媒体信息和艺术图。</summary>
 		<description lang="cs_CZ">Služba Skin Info Service poskytuje vzhledům podrobná metadata a grafiku nad rámec toho, co Kodi standardně zpřístupňuje. Přidává další vlastnosti, například hodnocení z více zdrojů, grafiku, podrobnosti o streamu a informace o obsazení a ději filmů, seriálů, epizod, sbírek filmů, hudebních videoklipů, interpretů a alb; využívá přitom knihovnu i online data. Obsahuje také nástroj pro vyhledání animovaných plakátů GIF a jejich přidání do knihovny.</description>
 		<description lang="en_GB">Skin Info Service provides skins with rich metadata and artwork beyond what Kodi exposes by default. It adds extra properties such as ratings from multiple sources, artwork, stream details, and cast and plot information for movies, TV shows, episodes, sets, music videos, artists, and albums, drawing on both your library and online data. It also includes a tool to find and add animated GIF posters to your library.</description>
+		<description lang="en_US">Skin Info Service provides skins with rich metadata and artwork beyond what Kodi exposes by default. It adds extra properties such as ratings from multiple sources, artwork, stream details, and cast and plot information for movies, TV shows, episodes, sets, music videos, artists, and albums, drawing on both your library and online data. It also includes a tool to find and add animated GIF posters to your library.</description>
+		<description lang="es_ES">Skin Info Service provee skins con metadata enriquecida y mejor arte de lo que expone Kodi por defecto. Añade propiedades extra como las valoraciones desde distintas fuentes, arte, detalles de la emisión, elenco y argumento de las películas, programas de TV, episodios, sagas, vídeos musicales, intérpretes y álbumes, pintándolo todo en la colección y datos online. Incluye tambien una herramietna para buscar y añadir carteles de GIF animados para la colección.</description>
 		<description lang="fr_FR">Skin Info Service fournit des informations supplémentaires telles que les notes, les illustrations et les détails de flux pour les films, les séries, les sagas, les artistes et les albums. Comprend un outil de recherche d&apos;affiches GIF pour trouver et ajouter automatiquement des affiches GIF animées à votre médiathèque.</description>
 		<description lang="hu_HU">A Skin Info Service gazdag metaadatokkal és grafikákkal látja el a felszíneket, amelyek túlmutatnak azon, amit a Kodi alapértelmezés szerint megjelenít. Extra tulajdonságokat ad hozzá, például értékeléseket több forrásból, grafikákat, streamelési részleteket, valamint szereplő- és cselekményinformációkat filmekhez, tévéműsorokhoz, epizódokhoz, díszletekhez, videoklipekhez, előadókhoz és albumokhoz, mind a médiatárad, mind az online adatok felhasználásával. Tartalmaz egy eszközt is, amellyel animált GIF-posztereket kereshetsz és adhatsz hozzá a médiatáradhoz.</description>
 		<description lang="it_IT">Skin Info Service fornisce alle skin metadati e artwork avanzati, oltre a quanto Kodi mostra di default. Aggiunge proprietà extra come le valutazioni da più fonti, artwork, dettagli del flusso e informazioni su cast e trama per film, serie TV, episodi, saghe cinematografiche, video musicali, artisti e album, attingendo sia dalla libreria che dai dati online. Include anche uno strumento per trovare e aggiungere poster GIF animati alla libreria.</description>
