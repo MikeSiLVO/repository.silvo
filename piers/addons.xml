@@ -213,11 +213,11 @@
 	</extension>
 </addon>
 
-<addon id="skin.aeon.nox.silvo" version="11.0.0~beta6" name="Aeon Nox: SiLVO" provider-name="SiLVO">
+<addon id="skin.aeon.nox.silvo" version="11.0.0~beta7" name="Aeon Nox: SiLVO" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0" />
-		<import addon="script.skinshortcuts" version="3.0.2" />
-		<import addon="script.skin.info.service" version="2.0.1~beta3" />
+		<import addon="script.skinshortcuts" version="3.0.4" />
+		<import addon="script.skin.info.service" version="2.0.1~beta13" />
 		<import addon="resource.images.studios.white" version="0.0.1" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 		<import addon="resource.images.weathericons.white" version="0.0.1" />
@@ -240,15 +240,23 @@
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-09.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-10.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
 		<news>
+11.0.0~beta7
+- Replace Artist Slideshow with Skin Info Service artist fanart
+- Fix TMDb search not opening the info dialog
+- Fix searches and music video lists for names with &amp;, commas or quotes
+- Fix missing PVR seek bar edit markers
+- Fix the music TriPanel user rating flag
+- Fix webrip case art on the live background
+- Performance improvements for low-power devices
+- Translation updates
+
 11.0.0~beta6
 - Add saved searches to the PVR breadcrumb
 - Load only the similar titles the info dialog shows
