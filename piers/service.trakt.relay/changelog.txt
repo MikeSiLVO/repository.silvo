@@ -1,0 +1,2 @@
+version 1.0.0
+- First release, a fork of script.trakt 3.9.0
